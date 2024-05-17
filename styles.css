@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap');
+
+body {
+    background-color: hsl(0, 0%, 0%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.modulo {
+    width: 320px;
+    height: 497px; 
+    background-color: hsl(0, 0%, 12%);
+  
+    text-align: center; 
+    border-radius: 20px;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.8);
+    
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    align-content: center;    
+}
+
+.avatar {
+    margin-top: 30px;
+
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%;
+    object-fit: cover;
+
+    display: flex; 
+    align-items: center; 
+    align-content: center;
+}
+
+.nome {
+    color: hsl(0, 0%, 100%);
+    margin-top: 20px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.local {
+    color: #bbff00;
+    margin-top: 5px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.tema {
+    color: hsl(0, 0%, 86%);
+    margin-top: 20px;
+    margin-bottom: 5px;
+
+    font-family: "Outfit", sans-serif;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+.link{
+    width: 90%;
+
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    align-content: center;  
+}
+
+.buttons {
+    width: 90%;
+    height: 40px;
+    background-color: #302f2f;
+    margin-top: 15px;
+    margin-top: 10px;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 10px;
+    font-family: "Outfit", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none; 
+}
+
+.buttons:hover {  
+    background-color: #bbff00; 
+    color: hsl(0, 0%, 0%);
+}
+
+
+/* Estilos para dispositivos com largura até 375px (Mobile) */
+@media only screen and (max-width: 375px) {
+    .modulo {
+        width: 80%; 
+        padding: 10px; 
+    }
+
+    .buttons {
+        width: 90%; 
+    }
+
+    .nome {
+        font-size: 20px; 
+    }
+
+    .local {
+        font-size: 14px; 
+    }
+
+    .tema {
+        font-size: 12px; 
+    }
+}
